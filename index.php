@@ -1,15 +1,12 @@
 <?php
-function has_space($string){
-	if(preg_match('/ /', $string)){
-		return true;
-	}else{
-		return false;
-	}
+
+$string = 'Chris';
+$string_length = strlen($string);
+
+for($x=1; $x <= $string_length; $x++){
+	echo $x.'<br>';
 }
 
-if(has_space('Thishasspace hahah ha')){
-	echo "has space";
-}else{
-	echo "has no spaces";
-}
+echo $string_length;
+
 ?>
