@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="buckyPHP">
+    <serverData>
+      <paths name="buckyPHP">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="BuckyPHP" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
+

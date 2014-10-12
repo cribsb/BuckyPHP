@@ -1,12 +1,14 @@
 <?php
 
-$string = 'Chris';
-$string_length = strlen($string);
+if(isset($_GET['user_name']) && !empty($_GET['user_name'])){
+    $user_name = $_GET['user_name'];
 
-for($x=1; $x <= $string_length; $x++){
-	echo $x.'<br>';
+
 }
 
-echo $string_length;
-
 ?>
+
+<form action="index.php" method="GET">
+    Name: <input type="text" name="user_name"><br><br>
+    <input type="submit" value="submit">
+</form>
