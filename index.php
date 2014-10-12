@@ -1,13 +1,20 @@
 <?php
 
-if(isset($_GET['user_name']) && !empty($_GET['user_name'])){
-    $user_name = $_GET['user_name'];
-    $user_name_lc = strtolower($user_name);
+$find = array('alex', 'billy', 'dale');
+$replace = array('al*x', 'bi**y', 'dale');
+
+if(isset($_POST['user_input'])){
+    $user_input = $_POST['user_input'];
+    $user_input_new = str_ireplace($find, $replace, $user_input);
+
+    echo $user_input_new;
 }
 
 ?>
 
-<form action="index.php" method="GET">
-    Name: <input type="text" name="user_name"><br><br>
+<hr>
+
+<form action="index.php" method="POST">
+    <textarea name="user_input" rows="6" cols="30"><?php echo $user_input; ?></textarea><br><br>
     <input type="submit" value="submit">
 </form>
