@@ -2,8 +2,7 @@
 
 if(isset($_GET['user_name']) && !empty($_GET['user_name'])){
     $user_name = $_GET['user_name'];
-
-
+    $user_name_lc = strtolower($user_name);
 }
 
 ?>
