@@ -1,8 +1,7 @@
 <?php
-
-include 'header.inc.php';
-
-if(isset($_POST['submit'])){
-	echo 'oke';
+$redirect_page = 'http://google.com';
+$redirect = true;
+if($redirect){
+	header('Location:'.$redirect_page);
 }
 ?>
