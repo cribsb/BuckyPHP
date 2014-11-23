@@ -1,9 +1,5 @@
 <?php
+session_start();
 
-include 'header.inc.php';
-
-if(isset($_POST['submit'])){
-	echo 'oke 2';
-}
-
+echo $_SESSION['name'];
 ?>
